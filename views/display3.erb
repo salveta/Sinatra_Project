@@ -1,0 +1,7 @@
+<h1> Felicidades <%= params[:name] %>  <h1>
+
+<div> Estoy muy contento de invitarte a la fiesta <%= params[:eventname] %>. La hora de inicio será a las <%= params[:eventhour] %> horas en <%= params[:place] %></div>
+<div> <%= params[:description] %>
+<br>
+
+<a href="http://localhost:9393/<%= params[:template] %>/<%= params[:eventname] %>/<%= params[:eventhour] %>/<%= params[:place] %>/<%= params[:description] %>/<%= params[:name] %>">url Evento</a>

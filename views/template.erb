@@ -1,0 +1,14 @@
+  
+
+
+  <form action="/templates" method="post" id="carddata">
+    <div> Template 1 <input type="radio" name="template" value="display1"></div>
+    <div> Template 2 <input type="radio" name="template" value="display2"></div>
+    <div> Template 3 <input type="radio" name="template" value="display3"></div>
+    <input type="hidden" name="name" value="<%= params[:name] %>">
+    <input type="hidden" name="place" value="<%= params[:place] %>">
+    <input type="hidden" name="description" value ="<%= params[:description] %>">
+    <input type="hidden" name="eventname" value ="<%= params[:eventname] %>">
+    <input type="hidden" name="eventhour" value ="<%= params[:eventhour] %>">
+    <input type="submit" value="Select Template">
+   </form>

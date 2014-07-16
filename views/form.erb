@@ -1,13 +1,13 @@
 
-    	<h3 align="center">Generador de invitaciones<h3>
+    <h3 align="center">Generador de invitaciones<h3>
 
-        <form action="/" method="post">
-        	<fieldset>
-            <div><label>Nombre y apellidos</label><input name="nombre_apellidos" type='text' value=''></div>
-            <div><label>Fiesta</label><input name="Fiesta" type='text' value='' ></div>
-            <div><label>Lugar</label><input name="Lugar" type='text' value=''></div>
-            <div><label>Hora</label><input name="Hora" type='text' value='' maxlength="40"></div>
-            <div><label>Comentarios</label><br><textarea name="Comentarios" rows='6' cols='100' wrap></textarea></div>
-            <div><input type='submit' value='Generar Invitación'></div>
-            </fieldset>
-        </form>
+    <form action="/form" method="post">
+        <fieldset>
+        <div><label>Nombre y apellidos</label><input name="name" type='text' value=''></div>
+        <div><label>Fiesta</label><input name="eventname" type='text' value='' ></div>
+        <div><label>Lugar</label><input name="place" type='text' value=''></div>
+        <div><label>Hora</label><input name="eventhour" type='text' value='' maxlength="40"></div>
+        <div><label>Comentarios</label><br><textarea name="description" rows='6' cols='100' wrap></textarea></div>
+        <div><input type='submit' value='Generar Invitación'></div>
+        </fieldset>
+    </form>
