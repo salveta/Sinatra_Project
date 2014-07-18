@@ -1,7 +1,26 @@
-<h1> Felicidades <%= params[:name] %>  <h1>
-
-<div> Estoy muy contento de invitarte a la fiesta <%= params[:eventname] %>. La hora de inicio será a las <%= params[:eventhour] %> horas en <%= params[:place] %></div>
-<div> <%= params[:description] %>
-<br>
-
-<a href="http://localhost:9393/<%= params[:template] %>/<%= params[:eventname] %>/<%= params[:eventhour] %>/<%= params[:place] %>/<%= params[:description] %>/<%= params[:name] %>">url Evento</a>
+<html style="padding-left: 300px; padding-right: 300px;">
+    <div class="container" style="background:#669933; color:#fff; margin-top:15px; padding-top:70px;">
+      <div style="text-align:center">
+        <img src="/img/sun.png">
+      </div>
+        <div style="font-family: 'Lobster', cursive; font-size:150px; text-align:center; color:#fffff">
+          Fiesta <%= params[:eventname] %>!! 
+        </div>
+          <div style="text-align:left; font-family: 'Lobster', cursive; font-size: 90px; padding-left: 50px"> 
+            Hola <%= params[:name] %>,
+          </div>
+              <div style="text-align:center; font-family: 'Lobster', cursive; font-size: 90px;"> 
+                  <p> Estoy muy contento de invitarte a la fiesta <%= params[:eventname] %>. La hora de inicio será a las <%= params[:eventhour] %> horas en <%= params[:place] %></p>
+                  <p> <%= params[:description] %></p>
+                <div style="text-align:left; font-family: 'Lobster', cursive; font-size: 90px; padding-left: 50px"> 
+                  <p> Se puntual!!</p>
+                </div>
+              </div>
+                <div style="text-align:right">
+                  <img src="/img/flipflops.png" width="250px">
+                </div>
+      </div>
+           <div class="container" style="color:#3s¡d91ff;text-align:center; font-size: 45px;">
+              <a href="http://localhost:9393/<%= params[:template] %>/<%= params[:eventname] %>/<%= params[:eventhour] %>/<%= params[:place] %>/<%= params[:description] %>/<%= params[:name] %>">url del evento</a>
+           </div>
+</html>
